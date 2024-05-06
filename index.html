@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minstagram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icono-64.png" sizes="64x64" type="image/png">
+    <script src="js/camara.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+</head>
+<body>
+    <header>
+        <h1>Minstagram</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="title">Posts</h1>
+            <div id="posts-container"></div>
+        </div>
+        <div id="app">
+            <img id="imgCamera" src="" alt=""> 
+            <div class="bottom-bar">
+                <button id="btnCapturar" class="floating-button">📷</button>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mi Imagen</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img id="capturedImage" src="" alt="Imagen capturada" class="custom-image">
+                        <input type="text" id="inputTitulo" class="form-control" placeholder="Ingrese el título de la imagen">
+                    </div>
+                    <div class="modal-footer">
+                        <button id = "btnCancelar" type="button" class="cancel-button" data-bs-dismiss="modal">Cancelar</button>
+                        <button id="btnPublicar" class="publish-button">Publicar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
